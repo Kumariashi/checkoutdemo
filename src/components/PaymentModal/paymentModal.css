@@ -1,0 +1,395 @@
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  padding: 4px 8px;
+  background: #423434;
+  border-radius: 38px;
+  font-family: Public Sans;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 11px;
+  letter-spacing: 0;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.progress-tag {
+  font-family: Public Sans;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 11px;
+  letter-spacing: 0;
+  color: #423434;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+
+}
+
+.banner-modal {
+  background: #423434;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+.banner-modal span {
+  font-family: Public Sans;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 11px;
+  letter-spacing: 0;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.dynamic-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 11px;
+}
+
+.content-heading {
+  padding: 0px 10px;
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-container {
+  display: flex;
+  justify-content: center;
+  gap: 11px;
+  align-items: center;
+}
+
+.dropdown-container span {
+  font-family: Public Sans;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+
+.price-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
+}
+
+.price-container .original {
+  font-family: Public Sans;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: 0;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+  color: #A2A2A2;
+}
+
+.price-container .discounted {
+  font-family: Public Sans;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.details-section {
+  width: 100%;
+}
+
+.coupon-section {
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+}
+
+.coupon-input {
+  padding: 8px;
+}
+
+.input-box {
+  border-bottom: 1px solid #E5E7EB;
+  background: #F3F4F6;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.input-box input {
+  width: 90%;
+  border: none;
+  background: #F3F4F6;
+  font-family: Public Sans;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 17px;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  color: #423434;
+}
+
+.input-box input:focus {
+  border: none;
+  outline: none;
+}
+
+.available {
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.available span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Public Sans;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 13px;
+  letter-spacing: 0;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+/*.mobile-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-section h2 {
+  font-family: Public Sans;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+
+.mobile-section p {
+  font-family: Public Sans;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: 0;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+
+.mobile-input-box {
+  display: flex;
+  border: 2px solid #423434CC;
+  border-radius: 19px;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-input-box input {
+  border: none;
+  font-family: Public Sans;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0;
+}
+
+.mobile-input-box input:focus {
+  border: none;
+  outline: none;
+}
+
+.mobile-input-box span {
+  font-family: Public Sans;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+
+.continue-section p {
+  font-family: Public Sans;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1px3;
+  letter-spacing: 0;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+
+.continue-section span {
+  font-family: Public Sans;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 13px;
+  letter-spacing: 0;
+  text-decoration: underline;
+  color: #42343499;
+}
+
+.cta-continue {
+  width: 100%;
+  background: #423434;
+  font-family: Public Sans;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 23px;
+  letter-spacing: 0;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  border: 6px solid #F9F9F9;
+  border-radius: 8px;
+  min-height: 60px;
+}*/
+
+.user-info {
+  background: #f9f9f9;
+  padding: 10px;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.section-header {
+  font-weight: bold;
+  margin-top: 10px;
+  padding-left: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-address {
+  color: #007bff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.address-card {
+    margin: 10px 0px 10px;
+    padding: 10px;
+width: 100%;
+height: 156px;
+flex-shrink: 0;
+border-radius: 10px;
+border: 1px solid #423434;
+ box-sizing: border-box;
+}
+
+.address-name {
+align-self: stretch;
+color: #423434;
+font-family: "Public Sans";
+font-size: 14.158px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: capitalize;
+}
+.adress-header{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+
+}
+
+.address-details {
+  margin: 13px 0;
+  color: #444;
+}
+
+.address-email {
+  font-size: 13px;
+  color: #777;
+}
+
+.address-actions {
+    display:flex;
+    //justify-content:space-between;
+     gap: 10px;
+}
+
+.address-actions button {
+  background: none;
+  border: none;
+  color: #007bff;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.continue-btn {
+  width: 100%;
+  background-color: #3c2b23;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.footer {
+  justify-content: start;
+  display: flex;
+  gap: 32px;
+}
+
+.footer img {
+  width: 52px;
+  height: 18px;
+}
+
+.footer span {
+  font-family: Public Sans;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 10px;
+  letter-spacing: 0;
+  vertical-align: middle;
+  text-transform: capitalize;
+  color: #070707;
+}

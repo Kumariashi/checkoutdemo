@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.checkout-container {
+ 
+  width: 412px;
+height: 917px;
+  //margin: 0 auto;
+   flex-shrink: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: white;
+  padding: 16px;
+  
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.back-icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+
+.step {
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: #f0f0f0;
+}
+
+.step.active {
+  background: #d1fae5;
+  color: #10b981;
+}
+
+.banner {
+  display: flex;
+width: 412px;
+padding: 8px 100.217px 7.469px 100.217px;
+justify-content: center;
+align-items: center;
+background: #423434;
+color: #FFF;
+text-align: center;
+font-family: "Public Sans";
+font-size: 10.943px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: capitalize;
+}
+
+.order-summary {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 12px;
+  display: flex;
+width: 390px;
+padding: 10.078px 14.396px 9.922px 14.646px;
+justify-content: center;
+align-items: center;
+}
+
+.summary-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.price-group s {
+  color: #aaa;
+  margin-right: 6px;
+}
+
+.coupon-input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 8px;
+}
+
+.coupons-section {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #333;
+}
+
+.view-coupons {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.user-info {
+  background: #f9f9f9;
+  padding: 10px;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.section-header {
+  font-weight: bold;
+  margin-top: 10px;
+  padding-left: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-address {
+  color: #007bff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.address-card {
+    margin: 10px 0px 10px;
+    padding: 10px;
+width: 100%;
+height: 156px;
+flex-shrink: 0;
+border-radius: 10px;
+border: 1px solid #423434;
+ box-sizing: border-box;
+}
+
+.address-name {
+align-self: stretch;
+color: #423434;
+font-family: "Public Sans";
+font-size: 14.158px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: capitalize;
+}
+.adress-header{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+
+}
+
+.address-details {
+  margin: 13px 0;
+  color: #444;
+}
+
+.address-email {
+  font-size: 13px;
+  color: #777;
+}
+
+.address-actions {
+    display:flex;
+    //justify-content:space-between;
+     gap: 10px;
+}
+
+.address-actions button {
+  background: none;
+  border: none;
+  color: #007bff;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.continue-btn {
+  width: 100%;
+  background-color: #3c2b23;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.footer {
+  font-size: 11px;
+  color: #999;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.shipping-method-section {
+  margin-top: 20px;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+}
+
+.section-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.shipping-option {
+  background-color: #f6f6f6;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.shipping-badge {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  color: #333;
+  font-size: 15px;
+}
+
+.shipping-price {
+  font-weight: 600;
+  color: #333;
+}
+
+.delivery-estimate {
+  font-size: 13px;
+  margin-top: 6px;
+  color: green;
+}

@@ -1,0 +1,91 @@
+.product-image {
+  width: 108px;
+  height: 108px;
+}
+
+.cart-item {
+  display: flex;
+  gap: 9px;
+  justify-content: space-between;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.product-details h3 {
+  font-family: Public Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0;
+  vertical-align: middle;
+  text-transform: capitalize;
+  color: #000000;
+  margin: 0;
+  justify-content: center;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.price {
+  font-family: Public Sans;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 11px;
+  letter-spacing: 0;
+  vertical-align: middle;
+  text-transform: capitalize;
+  color: #000000;
+  margin: 0;
+}
+
+.engrave {
+  font-family: Public Sans;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 10px;
+  letter-spacing: 0;
+  vertical-align: middle;
+  text-transform: capitalize;
+  color: #494949;
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+}
+
+.quantity {
+  border: 1px solid #000000;
+  border-radius: 45px;
+  font-family: Public Sans;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 13px;
+  letter-spacing: 0;
+  vertical-align: middle;
+  text-transform: capitalize;
+  min-width: 67px;
+  min-height: 23px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.total-price span {
+  font-family: Public Sans;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0;
+  text-align: right;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
