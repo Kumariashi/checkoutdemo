@@ -1,6 +1,5 @@
-.offers-container {
-  width: 412px;
-  height: 917px;
+{/*.offers-container {
+
   background-color: #fff;
   padding: 16px;
   font-family: 'Segoe UI', Roboto, sans-serif;
@@ -21,33 +20,72 @@
   cursor: pointer;
 }
 
-.login-banner {
-  display: flex;
-  align-items: center;
-  background-color: #f5f5f5;
-  padding: 10px;
-  border-radius: 6px;
-  font-size: 14px;
-  margin-bottom: 16px;
+.header-in{
+  color: #000;
+
+font-family: "Public Sans";
+font-size: 17.871px;
+font-style: normal;
+font-weight: 700;
+  
+
+padding: 14px;
+
+
 }
 
-.coupon-input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  font-size: 14px;
-  margin-bottom: 12px;
+.login-banner {
+ display: flex;
+padding: 15.32px 86.397px 16.68px 26.452px;
+align-items: left;
+gap: 24.213px;
+align-self: stretch;
+border-radius: 5.92px;
+background: rgba(66, 52, 52, 0.20);
+color: #423434;
+text-align: center;
+font-family: "Public Sans";
+font-size: 14.986px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: capitalize;
+ white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.coup-input {
+  display: flex;
+padding: 15.32px 86.397px 16.68px 26.452px;
+align-items: center;
+gap: 24.213px;
+align-self: stretch;
+border-radius: 5.92px;
+background: rgba(66, 52, 52, 0.20);
+color: #423434;
+
+text-align: left;
+font-family: "Public Sans";
+font-size: 14.986px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: capitalize;
+
 }
 
 .tab-buttons {
   display: flex;
+  justify-content: flex-start; 
   gap: 8px;
-  margin-bottom: 16px;
+  margin: 16px 0;
+    padding: 0; 
+    
 }
 
 .tab-buttons button {
-  padding: 6px 12px;
+ padding: 6px 12px;
   font-size: 13px;
   background-color: #eee;
   border: none;
@@ -80,8 +118,9 @@
   font-size: 15px;
   font-weight: 700;
   color: #333;
-  margin: 16px 0 12px;
+  margin: 8px 0 8px;
   padding-left: 4px;
+  text-align:left;
 }
 
 .offer-box {
@@ -102,8 +141,8 @@
 }
 
 .offer-box-header img {
-  width: 25px;
-  height: 25px;
+  min-width: 25px;
+  min-height: 25px;
   object-fit: contain;
   border-radius: 8px;
   background: #6367F8;
@@ -153,4 +192,4 @@
   width: 16px;
   margin: 0 4px;
   vertical-align: middle;
-}
+}*/}

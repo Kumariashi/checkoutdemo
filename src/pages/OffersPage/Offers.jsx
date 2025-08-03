@@ -1,43 +1,50 @@
-import React from 'react';
+/*import React from 'react';
 import './offers.css';
 import CloseIcon from '@mui/icons-material/Close';
 
 const Offers = () => {
   return (
     <div className="offers-container">
-      {/* Header */}
+    
       <div className="header">
-        <div className='header in'>
+        <div className="header-in">
           <span>Offers & Benefits</span>
         </div>
         <CloseIcon className="close-icon" />
       </div>
 
-      {/* Login Prompt */}
+      <div className="login-divs">
+
+     
       <div className="login-banner">
         <div className='login-text'>
           ➤ Complete Login To Get More Offers
         </div>
       </div>
 
-      {/* Coupon Input */}
+      
+      <div className="coup-section">
+       <div className="in-box">
       <input
-        className="coupon-input"
+        className="coup-input"
         type="text"
+       
         placeholder="ENTER COUPON CODE"
       />
+      </div>
+      </div>
 
-      {/* Tabs */}
       <div className="tab-buttons">
         <button>Active Coupons</button>
         <button>Payment Offers</button>
       </div>
 
-      {/* Payment Offers Section */}
+      </div>
+
+     
       <div className="payment-section-title">Payment Offers</div>
       <div className="login-offer-box">➤ Complete Login To Get More Offers</div>
 
-      {/* UPI Offers */}
       <div className="offer-category">UPI</div>
       <div className="offers-scroll-container">
         <div className="offer-box">
@@ -85,7 +92,7 @@ const Offers = () => {
         </div>
       </div>
 
-      {/* Wallet Offers */}
+     
       <div className="offer-category">Wallets</div>
       <div className="offers-scroll-container">
         <div className="offer-box">
@@ -111,7 +118,6 @@ const Offers = () => {
         </div>
       </div>
 
-      {/* Footer */}
       <div className="footer">
         T&C | Privacy 95784b9b • PCI DSS Certified • Secured Checkout • Verified Payment
       </div>
@@ -119,4 +125,4 @@ const Offers = () => {
   );
 };
 
-export default Offers;
+export default Offers;*/
