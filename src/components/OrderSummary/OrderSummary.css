@@ -1,0 +1,51 @@
+.content-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 16px 10px 16px;
+
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.dropdown-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+ 
+  font-family: "Public Sans";
+font-size: 18.24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: capitalize;
+}
+
+.price-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
+}
+
+.price-container .original {
+  font-family: Public Sans;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: 0;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+  color: #A2A2A2;
+}
+
+.price-container .discounted {
+  font-family: Public Sans;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+  color: #000000;
+}

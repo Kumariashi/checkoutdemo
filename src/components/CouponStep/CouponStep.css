@@ -1,0 +1,207 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+   overflow-y: auto;
+}
+ 
+.header-in span {
+  font-size: 18px;
+  font-weight: 600;
+}
+ 
+.close-icon {
+  color: #000;
+}
+ 
+.login-banner {
+  border-radius: 5.92px;
+  background: rgba(66, 52, 52, 0.20);
+  padding: 12px 16px;
+  border-left: 4px solid #2196f3;
+}
+ 
+.login-text {
+  color: #423434;
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 14.986px;
+  font-style: normal;
+  font-weight: 400;
+}
+ 
+.coup-sec {
+  padding: 16px;
+  border-radius: 5.92px;
+  border: 0.74px solid #929CA8;
+  margin: 16px 0;
+}
+ 
+.coup-sec input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+}
+ 
+.tab-buttons {
+  display: flex;
+  padding: 0 5px;
+  margin-bottom: 16px;
+  gap: 3px;
+}
+ 
+.tab-buttons button {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ddd;
+  background: #f5f5f5;
+  border-radius: 6px;
+  color: #423434;
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 10.61px;
+  font-weight: 400;
+  cursor: pointer;
+  background: rgba(66, 52, 52, 0.20);
+  max-width: 30%;
+}
+ 
+.payment-section-title {
+  padding: 0 16px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+ 
+.login-offer-box {
+  margin: 0 16px 16px 16px;
+  background: #fff3cd;
+  padding: 12px;
+  border-radius: 6px;
+  border-left: 4px solid #ffc107;
+  color: #26BCA5;
+  font-size: 14px;
+  border-radius: 5.92px;
+  border: 1px solid #26BCA5;
+  background: #F0FDF9;
+}
+ 
+.offer-category {
+  padding: 0 16px;
+  margin: 12px 0 12px 0;
+  color: #666;
+  font-family: "Public Sans";
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+}
+ 
+/* 🔥 UPDATED: Different scroll containers for UPI and Wallet */
+.offers-scroll-container {
+  padding: 0 16px;
+  margin-bottom: 20px;
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Hide horizontal scroll */
+}
+ 
+/* UPI offers container - larger height */
+.offers-scroll-container.upi-offers {
+  width: 390px;
+  height: 296px;
+}
+ 
+/* Wallet offers container - smaller height */
+.offers-scroll-container.wallet-offers {
+  width: 390px;
+  height: 141px;
+}
+ 
+/* Custom scrollbar styling */
+.offers-scroll-container::-webkit-scrollbar {
+  width: 6px;
+}
+ 
+.offers-scroll-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+ 
+.offers-scroll-container::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+ 
+.offers-scroll-container::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+ 
+.offers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-right: 8px; /* Add some padding for scrollbar */
+}
+ 
+.offer-box {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  background: #fff;
+  flex-shrink: 0; /* Prevent boxes from shrinking */
+}
+ 
+.offer-box-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+ 
+.offer-box-header img {
+  min-width: 24px;
+  min-height: 24px;
+  border-radius: 4px;
+}
+ 
+.offer-title {
+  color: #222;
+ 
+  font-family: "Public Sans";
+  font-size: 12.5px;
+  font-weight: 600;
+}
+ 
+.offer-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ 
+.offer-subtitle {
+  font-size: 12px;
+  color: #666;
+  color: #777A7C;
+  font-family: "Public Sans";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+}
+ 
+.view-more {
+  color: #007bff;
+  font-size: 12px;
+  cursor: pointer;
+  color: #777A7C;
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-underline-offset: auto;
+  text-underline-position: from-font;}

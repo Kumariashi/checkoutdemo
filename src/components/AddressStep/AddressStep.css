@@ -1,0 +1,156 @@
+.user-info {
+  background: #f8f9fa;
+  padding: 12px 16px;
+  margin: 16px 0;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  margin: 20px 0 12px 0;
+  font-size: 16px;
+}
+
+.add-address {
+ 
+  cursor: pointer;
+  
+  font-weight: 500;
+  color: #423434;
+text-align: center;
+font-family: "Public Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: capitalize;
+}
+
+.address-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 12px;
+  background: #fff;
+}
+
+.address-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.address-name {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.address-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.address-actions button {
+  background: none;
+  
+  padding: 4px 8px;
+  
+  font-family: "Public Sans";
+font-size: 12.136px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-decoration-line: underline;
+text-decoration-style: solid;
+text-decoration-skip-ink: auto;
+text-decoration-thickness: auto;
+text-underline-offset: auto;
+text-underline-position: from-font;
+text-transform: capitalize;
+color: #423434;
+  cursor: pointer;
+  
+}
+
+.address-actions button:hover {
+  background: #f5f5f5;
+}
+
+.address-details {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+.address-email {
+  font-size: 13px;
+  color: #666;
+}
+
+.shipping-method-section {
+  margin: 20px 0;
+  padding: 16px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.section-title {
+  font-weight: 600;
+  margin-bottom: 12px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.shipping-option {
+  background: white;
+  border-radius: 6px;
+  
+    
+}
+
+.shipping-badge {
+  display: flex;
+    border: 1px solid #000;
+     border-radius: 16px;
+  //align-items: center;
+  margin-bottom: 8px;
+  margin-top: 3px;
+  padding: 6px;
+  margin-right:155px;
+ 
+    
+     
+
+}
+
+.shipping-badge span:first-child {
+  color: #444;
+font-family: "Public Sans";
+font-size: 14.158px;
+font-style: normal;
+font-weight: 400;
+line-height: 20.226px; /* 142.857% */
+text-transform: capitalize;
+
+}
+
+.shipping-price {
+  font-weight: 600;
+  color: #2e7d32;
+}
+
+.delivery-estimate {
+  font-size: 13px;
+  color: #666;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+  
+}
+

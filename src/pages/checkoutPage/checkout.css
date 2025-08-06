@@ -83,20 +83,7 @@ align-items: center;
   margin-right: 6px;
 }
 
-.coupon-input {
-  width: 100%;
-  padding: 8px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  margin-bottom: 8px;
-}
 
-.coupons-section {
-  display: flex;
-  justify-content: space-between;
-  font-size: 13px;
-  color: #333;
-}
 
 .view-coupons {
   color: #007bff;
@@ -111,16 +98,20 @@ align-items: center;
 }
 
 .section-header {
-  font-weight: bold;
-  margin-top: 10px;
-  padding-left: 13px;
-  display: flex;
+ color: #423434;
+text-align: center;
+font-family: "Public Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-transform: capitalize;
   justify-content: space-between;
   align-items: center;
 }
 
 .add-address {
-  color: #007bff;
+
   cursor: pointer;
   font-size: 14px;
 }
@@ -173,7 +164,7 @@ text-transform: capitalize;
 .address-actions button {
   background: none;
   border: none;
-  color: #007bff;
+  //color: #007bff;
   font-size: 13px;
   cursor: pointer;
 }
@@ -181,12 +172,12 @@ text-transform: capitalize;
 .continue-btn {
   width: 100%;
   background-color: #3c2b23;
-  color: white;
+  //color: white;
   border: none;
   padding: 12px;
   border-radius: 5px;
-  font-size: 16px;
-  margin-top: 20px;
+  font-size: 23px;
+  margin-top: 8px;
   cursor: pointer;
 }
 

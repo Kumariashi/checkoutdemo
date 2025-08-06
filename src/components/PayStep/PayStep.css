@@ -1,0 +1,301 @@
+.pay-step {
+  padding: 16px;
+  background: #fff;
+}
+ 
+
+/* Delivery Info Section */
+.delivery-info-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  background: #F0FDF9;
+  border-radius: 8px;
+  margin: 10px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+ 
+.delivery-icon {
+  font-size: 16px;
+  color: #26BCA5;
+}
+ 
+.delivery-text {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #26BCA5;
+}
+ 
+/* Payment Options Section */
+.payment-options-section {
+  width: 100%;
+  margin: 20px 0;
+}
+ 
+.payment-title {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #423434;
+  margin: 0 0 8px 0;
+}
+ 
+.payment-subtitle {
+  color: #000;
+  font-family: "Josefin Sans";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-bottom: 16px;
+}
+ 
+/* Payment Method Cards */
+.payment-method-card {
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 8px 0;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+ 
+.payment-method-card:hover {
+  border-color: #26BCA5;
+  box-shadow: 0 2px 8px rgba(38, 188, 165, 0.1);
+}
+ 
+.payment-method-card.selected {
+  border-color: #26BCA5;
+  background: #F0FDF9;
+}
+ 
+.payment-method-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+ 
+.payment-method-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+ 
+.payment-icon {
+  font-size: 20px;
+  min-width: 24px;
+}
+ 
+.payment-method-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+ 
+.payment-name {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #423434;
+}
+ 
+.payment-method-info .payment-subtitle {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #666;
+  margin: 0;
+  text-transform: none;
+}
+ 
+.payment-price {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #423434;
+}
+ 
+/* UPI Apps Horizontal Scroller */
+.upi-apps-container {
+  margin-top: 12px;
+  width: 100%;
+}
+ 
+.upi-apps-scroller {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding: 8px 0;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+ 
+.upi-apps-scroller::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+ 
+.upi-app-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  min-width: 60px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+ 
+.upi-app-item:hover {
+  background: rgba(38, 188, 165, 0.1);
+}
+ 
+.upi-app-item.selected {
+  background: rgba(38, 188, 165, 0.2);
+  border: 1px solid #26BCA5;
+}
+ 
+.upi-app-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5;
+}
+ 
+.upi-app-icon img {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+}
+ 
+.upi-app-name {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  color: #666;
+  text-align: center;
+}
+ 
+/* All UPI Apps Button */
+.all-upi-apps-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background: #26BCA5;
+  border-radius: 6px;
+  margin-top: 12px;
+  cursor: pointer;
+  color: white;
+}
+ 
+.all-upi-apps-btn span:first-child {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+ 
+.all-upi-apps-btn span:nth-child(2) {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+ 
+.all-upi-apps-btn span:last-child {
+  font-size: 12px;
+}
+ 
+/* UPI ID Input Section */
+.upi-id-section {
+  width: 100%;
+  margin: 20px 0;
+}
+ 
+.upi-label {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #423434;
+  display: block;
+  margin-bottom: 8px;
+}
+ 
+.upi-input-container {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  height: 57px;
+  border: 1px solid #423434;
+  border-radius: 6px;
+  overflow: hidden;
+}
+ 
+.upi-input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  font-family: 'Public Sans', sans-serif;
+  font-size: 14px;
+  outline: none;
+  background: transparent;
+}
+ 
+.pay-button {
+  display: inline-flex;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 0 6px 6px 0;
+  background: #423434;
+  color: #FFF;
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+ 
+.pay-button:hover {
+  background: #2d1f1f;
+}
+ 
+/* Order Total */
+.order-total {
+  border-top: 1px solid #E0E0E0;
+  padding-top: 16px;
+  margin-top: 20px;
+}
+ 
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ 
+.total-row span {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+ 
+.amount {
+  color: #007AFF !important;
+}

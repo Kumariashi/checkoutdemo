@@ -1,0 +1,48 @@
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  
+}
+
+.progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.logo {
+  padding: 4px 8px;
+  background: #423434;
+  border-radius: 38px;
+  font-family: Public Sans;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 11px;
+  letter-spacing: 0;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.progress-tag {
+  font-family: Public Sans;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 11px;
+  letter-spacing: 0;
+  color: #423434;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+
+}
+
+
+.progress-tag.active {
+  color: #333;
+  font-weight: bold;
+}
