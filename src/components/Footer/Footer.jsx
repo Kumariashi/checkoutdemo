@@ -14,6 +14,7 @@ const Footer = ({step, STEPS, onContinue}) => {
       case STEPS.ADDRESS:
       case STEPS.ADDADDRESS:
          case STEPS.PAY:
+          case STEPS.CARD_PAYMENT:
         return null; // No extra content for these steps
       default:
         return null;
@@ -21,7 +22,7 @@ const Footer = ({step, STEPS, onContinue}) => {
   };
  
   const shouldShowButton = () => {
-    return step === STEPS.MOBILE || step === STEPS.ADDRESS || step === STEPS.ADDADDRESS;
+    return step === STEPS.MOBILE || step === STEPS.ADDRESS || step === STEPS.ADDADDRESS||step === STEPS.CARD_PAYMENT||step === STEPS.PAYMENT_SUCCESS;
   };
  
   return (
@@ -29,7 +30,7 @@ const Footer = ({step, STEPS, onContinue}) => {
       {/* Continue button - AT THE TOP */}
       {shouldShowButton() && (
         <button className="continue-btn" onClick={onContinue}>
-          Continue →
+         Continue →
         </button>
       )}
       

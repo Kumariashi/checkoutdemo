@@ -30,52 +30,54 @@
   margin: 0;
 }
 
-.banks-container {
+.banks1-container {
   flex: 1;
   padding: 20px;
   overflow-y: auto;
 }
 
-.banks-grid {
+.banks1-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  margin-bottom: 24px;
+  border: 0.74px solid #777A7C;
+  margin: 0px 20px 20px 24px;
+  
 }
 
-.bank-item {
+.bank1-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 16px 8px;
-  border: 2px solid #e5e7eb;
-  border-radius: 12px;
+  padding: 20px 3px;
+  
+border: 1.01px dashed #777A7C;
+
+background: #FFF;
   cursor: pointer;
   transition: all 0.2s ease;
-  background: #fff;
   text-align: center;
   min-height: 100px;
   justify-content: center;
 }
 
-.bank-item:hover {
+.bank1-item:hover {
   border-color: #3b82f6;
   box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
 }
 
-.bank-item.selected {
+.bank1-item.selected {
   border-color: #3b82f6;
   box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
   background: rgba(59, 130, 246, 0.05);
 }
 
-.bank-icon-container {
+.bank1-icon-container {
   margin-bottom: 8px;
 }
 
-.bank-icon {
-  width: 40px;
-  height: 40px;
+.bank1-icon {
+  max-width: 40px;
+  max-height: 40px;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -85,33 +87,43 @@
   margin: 0 auto;
 }
 
-.bank-name {
-  font-size: 12px;
-  font-weight: 500;
-  color: #374151;
-  line-height: 1.3;
+.bank1-name {
+color: #222;
+font-family: "Public Sans";
+font-size: 15.116px;
+font-style: normal;
+font-weight: 400;
+text-transform: capitalize;
   text-align: center;
-  display: block;
+ margin-top: 8px;
+  height:36px;
+  width: 100%;
+  align-items: center;
+
 }
 
-.other-banks-section {
-  margin: 24px 0;
+.other-banks1-section {
+  margin: 20px 20px;
 }
 
-.other-banks-button {
+.other-banks1-button {
   width: 100%;
   padding: 16px 24px;
-  background: #f8f9fa;
-  color: #374151;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  font-size: 14px;
-  font-weight: 500;
+  background: #FFF;
+border-radius: 5.92px;
+border: 0.74px solid #777A7C;
+ color: #222;
+ text-align:left;
+font-family: "Public Sans";
+font-size: 14.801px;
+font-style: normal;
+font-weight: 600;
+text-transform: capitalize;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
-.other-banks-button:hover {
+.other-banks1-button:hover {
   background: #e5e7eb;
   border-color: #d1d5db;
 }
@@ -154,35 +166,3 @@
   transform: translateY(1px);
 }
 
-/* Responsive adjustments */
-@media (max-width: 480px) {
-  .banks-container {
-    padding: 16px;
-  }
-  
-  .banks-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
-  }
-  
-  .bank-item {
-    padding: 12px 6px;
-    min-height: 80px;
-  }
-  
-  .bank-icon {
-    width: 32px;
-    height: 32px;
-    font-size: 16px;
-  }
-  
-  .bank-name {
-    font-size: 11px;
-  }
-}
-
-@media (max-width: 360px) {
-  .banks-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}

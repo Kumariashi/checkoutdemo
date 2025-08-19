@@ -8,28 +8,28 @@ const WalletPayment = ({ formData, handleInputChange, onPaymentSuccess }) => {
     {
       id: 'paytm',
       name: 'Paytm',
-      offer: 'Flat 5% Instant Gift Upto Rs. 100 + Paytm OFFERS',
+      offer: 'free facewash+ gift worth 160 + prepaid off   100',
       icon: '💙',
       color: '#002970'
     },
     {
       id: 'phonepe',
       name: 'PhonePe',
-      offer: 'Flat 5% Instant Gift Worth Up + Paytm OFFERS',
+      offer: 'free facewash+ gift worth 160 + prepaid off   100',
       icon: '📱',
       color: '#5f259f'
     },
     {
       id: 'amazonpay',
-      name: 'Amazon Pay',
-      offer: 'Flat 5% Instant Gift Worth 100 + Paytm OFFERS Flat 5% instant Gift Upto Cashback On Amazon Pay',
+      name: 'Amazon',
+      offer: 'free facewash+ gift worth 160 + prepaid off    100 & upto    300 cashback on amzan pay',
       icon: '📦',
       color: '#ff9900'
     },
     {
       id: 'phonepe2',
       name: 'PhonePe',
-      offer: 'Upto 2.5% Cashback On Digital Money',
+      offer: 'upto    150+ cashback on super money',
       icon: '📱',
       color: '#5f259f'
     }
@@ -42,15 +42,7 @@ const WalletPayment = ({ formData, handleInputChange, onPaymentSuccess }) => {
     }
   };
 
-  const handleContinue = () => {
-    if (!selectedWallet) {
-      alert('Please select a wallet');
-      return;
-    }
-    if (onPaymentSuccess) {
-      onPaymentSuccess();
-    }
-  };
+  
 
   return (
     <div className="wallet-payment">
@@ -71,7 +63,7 @@ const WalletPayment = ({ formData, handleInputChange, onPaymentSuccess }) => {
                 <div className="wallet-left">
                   <div 
                     className="wallet-icon"
-                    style={{ backgroundColor: wallet.color }}
+                  
                   >
                     {wallet.icon}
                   </div>
@@ -80,24 +72,14 @@ const WalletPayment = ({ formData, handleInputChange, onPaymentSuccess }) => {
                     <p className="wallet-offer">{wallet.offer}</p>
                   </div>
                 </div>
-                <div className="wallet-arrow">
-                  <span>→</span>
-                </div>
+                 <img src='/angle-right.svg' className='angle-right-icon' />
               </div>
             </div>
           ))}
         </div>
       </div>
 
-      <div className="wallet-payment-footer">
-        <button 
-          className="continue-button"
-          onClick={handleContinue}
-          disabled={!selectedWallet}
-        >
-          Continue →
-        </button>
-      </div>
+      
     </div>
   );
 };

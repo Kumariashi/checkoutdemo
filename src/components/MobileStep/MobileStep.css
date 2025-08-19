@@ -1,10 +1,12 @@
 .details-section {
-  padding: 16px;
+  padding: 20px 16px 16px 16px;
 }
 
 .coupon-section {
-  border: 1px solid #777A7C;
-  border-radius: 8px;}
+  border: 0.769px solid #E5E7EB;
+  border-radius: 8px;
+background: #FFF;
+}
 
 
 {/*.coupon-input {
@@ -13,7 +15,8 @@
 
 .input-box {
   border-bottom: 1px solid #777A7C;
-  background:  #F3F4F6;;
+ border-radius: 3.846px;
+background: #F3F4F6;
   padding: 8px;
  
     border-top-left-radius: 9px;

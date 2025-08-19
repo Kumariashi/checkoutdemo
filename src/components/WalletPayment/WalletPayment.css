@@ -1,188 +1,229 @@
-.netbanking-payment {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  background: #fff;
+.wallet-payment {
+  max-width: 390px;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  min-height: 76vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  position: relative;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
-
-.netbanking-payment-header {
+/* Header */
+.wallet-payment-header {
   display: flex;
   align-items: center;
   padding: 16px 20px;
-  border-bottom: 1px solid #eee;
-  background: #fff;
+  background-color: white;
+  border-bottom: 1px solid #e0e0e0;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 100;
 }
-
 .back-arrow {
-  font-size: 18px;
-  margin-right: 12px;
+  font-size: 20px;
+  margin-right: 16px;
   cursor: pointer;
   color: #333;
+  font-weight: 500;
 }
-
 .payment-title {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   color: #333;
   margin: 0;
 }
-
-.banks-container {
-  flex: 1;
-  padding: 20px;
-  overflow-y: auto;
+/* Wallets Container */
+.wallets-container {
+  background-color: white;
+  margin-top: 16px;
+  border-radius: 8px;
+  //overflow: hidden;
+   box-sizing: border-box;
+  overflow-x: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
-
-.banks-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  margin-bottom: 24px;
+.wallets-list {
+  padding: 0;
 }
-
-.bank-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 16px 8px;
-  border: 2px solid #e5e7eb;
-  border-radius: 12px;
+/* Wallet Items */
+.wallet-item {
+  border-bottom: 1px solid #f0f0f0;
   cursor: pointer;
   transition: all 0.2s ease;
-  background: #fff;
-  text-align: center;
-  min-height: 100px;
-  justify-content: center;
+  background-color: white;
+  position: relative;
+  display: flex;
+margin: 20px 12px 0px;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+max-height:60px;
+  box-sizing: border-box;
+
 }
 
-.bank-item:hover {
-  border-color: #3b82f6;
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+.wallet-item:last-child {
+  border-bottom: none;
 }
 
-.bank-item.selected {
-  border-color: #3b82f6;
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
-  background: rgba(59, 130, 246, 0.05);
-}
 
-.bank-icon-container {
-  margin-bottom: 8px;
-}
+.wallet-content {
+  display: flex;
+  align-items: center;
+padding: 11px 15px 11.585px 14px;
+justify-content: center;
+align-items: center;
+align-self: stretch;
+border-radius: 10px;
+border: 2px solid #777A7C;
+background: #FFF;
 
-.bank-icon {
+}
+.wallet-left {
+  display: flex;
+  align-items: center;
+  flex: 1;
+   overflow: hidden;
+}
+.wallet-icon {
   width: 40px;
   height: 40px;
   border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 11px;
   font-size: 20px;
-  color: white;
-  margin: 0 auto;
+  flex-shrink: 0;
+  background-color: #f5f5f5;
+  border: 1px solid #e0e0e0;
+}
+/* Specific wallet icon styles */
+
+
+.wallet-info {
+  flex: 1;
+  margin-right: 12px;
+  display: flex;
+  flex-direction: row;
+}
+.wallet-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  margin: 9px 0 11px 0;
+  white-space: nowrap;
+  
+}
+.wallet-offer {
+  font-size: 9.5px;
+  margin: 0px 11px;
+  justify-content: center;
+align-items: center;
+  text-overflow: ellipsis;
+  border-radius: 47.619px;
+border: 0.794px solid #423434;
+
+color: #423434;
+text-align: center;
+font-family: "Public Sans";
+text-transform: capitalize;
+display: flex;
+
+padding: 2.793px 13px 1.207px 14px;
+
+font-weight: 500;
+min-width:175px;
+min-height: 37px;
+line-height: 11px;
+ 
+
 }
 
-.bank-name {
-  font-size: 12px;
-  font-weight: 500;
-  color: #374151;
-  line-height: 1.3;
-  text-align: center;
-  display: block;
-}
-
-.other-banks-section {
-  margin: 24px 0;
-}
-
-.other-banks-button {
-  width: 100%;
-  padding: 16px 24px;
-  background: #f8f9fa;
-  color: #374151;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  font-size: 14px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.other-banks-button:hover {
-  background: #e5e7eb;
-  border-color: #d1d5db;
-}
-
-.netbanking-payment-footer {
-  padding: 16px 20px;
-  background: #fff;
-  border-top: 1px solid #eee;
-  position: sticky;
+/* Footer */
+.wallet-payment-footer {
+  position: fixed;
   bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  border-top: 1px solid #e0e0e0;
+  padding: 16px 20px;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
 }
-
 .continue-button {
   width: 100%;
-  padding: 16px 24px;
-  background: #8B5A3C;
+  padding: 14px 20px;
+  background-color: #2196F3;
   color: white;
   border: none;
   border-radius: 8px;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: all 0.2s ease;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
 }
-
-.continue-button:hover {
-  background: #7a4d35;
+.continue-button:hover:not(:disabled) {
+  background-color: #1976D2;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(33, 150, 243, 0.3);
 }
-
 .continue-button:disabled {
-  background: #d1d5db;
+  background-color: #ccc;
   cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
 }
-
-.continue-button:active {
-  transform: translateY(1px);
+.continue-button:active:not(:disabled) {
+  transform: translateY(0);
 }
-
-/* Responsive adjustments */
+/* Responsive Design */
 @media (max-width: 480px) {
-  .banks-container {
-    padding: 16px;
+  .wallet-payment {
+    max-width: 100%;
   }
   
-  .banks-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
+  .wallet-payment-footer {
+    max-width: 100%;
   }
   
-  .bank-item {
-    padding: 12px 6px;
-    min-height: 80px;
+  .wallet-content {
+    padding: 14px 16px;
   }
   
-  .bank-icon {
-    width: 32px;
-    height: 32px;
-    font-size: 16px;
+  .wallet-payment-header {
+    padding: 14px 16px;
   }
   
-  .bank-name {
-    font-size: 11px;
+  .wallet-icon {
+    min-width: 36px;
+    min-height: 36px;
+    font-size: 18px;
   }
+  
+  .wallet-name {
+    font-size: 15px;
+   
+  }
+  
+  
+}
+/* Animation for selection */
+.wallet-item {
+  position: relative;
+  overflow: hidden;
 }
 
-@media (max-width: 360px) {
-  .banks-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+
+/* Focus states for accessibility */
+
+.continue-button:focus {
+  outline: 2px solid #2196F3;
+  outline-offset: 2px;
 }

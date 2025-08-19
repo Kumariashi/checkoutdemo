@@ -142,11 +142,11 @@ const CouponStep = ({ onClose, offersData }) => {
  
   return (
     <>
-      <div className="header">
+      <div className="header1">
         <div className="header-in">
           <span>Offers & Benefits</span>
         </div>
-        <CloseIcon className="close-icon" onClick={onClose} style={{ cursor: 'pointer' }} />
+        <CloseIcon className="close-icon1" onClick={onClose} style={{ cursor: 'pointer' }} />
       </div>
 
        <div className='scroll-container'>

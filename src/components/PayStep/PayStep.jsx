@@ -1,49 +1,54 @@
 import React, { useState } from 'react';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import './PayStep.css';
- 
+
 const PayStep = ({ onContinue, onViewCoupons, formData, onPaymentMethodChange, onNavigateToPayment }) => {
     const [selectedPaymentMethod, setSelectedPaymentMethod] = useState('upi'); // Default to UPI
     const [selectedUPI, setSelectedUPI] = useState('');
- 
+
     const paymentMethods = [
-        { 
-            id: 'card', 
-            name: 'Debit/Credit Cards', 
+        {
+            id: 'card',
+            name: 'Debit/Credit Cards',
             subtitle: 'Visa, MasterCard, Rupay',
-            icon: '💳', 
-            price: '₹ 399' 
+            icon: '/cardimg.png',
+            original: '699',
+            discounted: '₹ 399'
         },
-        { 
-            id: 'wallet', 
-            name: 'Wallets', 
+        {
+            id: 'wallet',
+            name: 'Wallets',
             subtitle: 'PhonePe, Amazon, Airtel',
-            icon: '👛', 
-            price: '₹ 399' 
+            icon: '/wallet.png',
+            original: '699',
+            discounted: '₹ 399'
         },
-        { 
-            id: 'netbanking', 
-            name: 'Netbanking', 
+        {
+            id: 'netbanking',
+            name: 'Netbanking',
             subtitle: 'SBI, HDFC, ICICI, Axis',
-            icon: '🏦', 
-            price: '₹ 399' 
+            icon: '/netbanking.png',
+            original: '699',
+            discounted: '₹ 399'
         },
-        { 
-            id: 'cod', 
-            name: 'Cash On Delivery', 
+        {
+            id: 'cod',
+            name: 'Cash On Delivery',
             subtitle: 'Pay Online To Save Rs. 50',
-            icon: '💰', 
-            price: '₹ 449' 
+            icon: '/cod.png',
+            original: '699',
+            discounted: '₹ 399'
         }
     ];
- 
+
     const upiOptions = [
-        { id: 'paytm', name: 'Paytm', icon: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHJ4PSI0IiBmaWxsPSIjMDAyQjhFIi8+PC9zdmc+" },
-        { id: 'phonepe', name: 'PhonePe', icon: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1zbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHJ4PSI0IiBmaWxsPSIjNUYyNTlGIi8+PC9zdmc+" },
-        { id: 'gpay', name: 'G Pay', icon: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1zbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHJ4PSI0IiBmaWxsPSIjNDI4NUY0Ii8+PC9zdmc+" },
-        { id: 'amazonpay', name: 'Amazon Pay', icon: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1zbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHJ4PSI0IiBmaWxsPSIjRkY5OTAwIi8+PC9zdmc+" }
+        { id: 'paytm', name: 'Paytm', icon: "/image21.svg" },
+        { id: 'phonepe', name: 'PhonePe', icon: "/image22.svg" },
+        { id: 'gpay', name: 'G Pay', icon: "/image23.svg" },
+        { id: 'amazonpay', name: 'Amazon Pay', icon: "/amazonpay.png" },
+        { id: 'anyupi', name: 'Any UPI', icon: "img25.png" }
     ];
- 
+
     const handlePaymentMethodSelect = (methodId) => {
         setSelectedPaymentMethod(methodId);
         if (onPaymentMethodChange) {
@@ -53,25 +58,25 @@ const PayStep = ({ onContinue, onViewCoupons, formData, onPaymentMethodChange, o
             setSelectedUPI('');
         }
     };
- 
+
     const handleUPISelect = (upiId) => {
         setSelectedUPI(upiId);
         if (onPaymentMethodChange) {
             onPaymentMethodChange('upi', upiId);
         }
     };
- 
+
     // ✅ NEW ADDITION: Handle payment method navigation
     const handlePaymentMethodNavigation = (methodId) => {
         // First select the payment method
         handlePaymentMethodSelect(methodId);
-        
+
         // Then navigate to the corresponding payment page
         if (onNavigateToPayment) {
             onNavigateToPayment(methodId);
         }
     };
- 
+
     // ✅ NEW ADDITION: Handle UPI payment navigation
     const handleUPIPayment = () => {
         if (selectedUPI || document.querySelector('.upi-input').value) {
@@ -82,7 +87,7 @@ const PayStep = ({ onContinue, onViewCoupons, formData, onPaymentMethodChange, o
             alert('Please select a UPI app or enter UPI ID');
         }
     };
- 
+
     return (
         <div className="pay-step">
             <div className='details-section'>
@@ -98,29 +103,34 @@ const PayStep = ({ onContinue, onViewCoupons, formData, onPaymentMethodChange, o
                         <span>View Coupons <KeyboardArrowRightIcon onClick={onViewCoupons} style={{ cursor: 'pointer' }} /></span>
                     </div>
                 </div>
- 
+
                 {/* Delivery Info */}
                 <div className='delivery-info-section'>
-                    <span className='delivery-icon'>🚚</span>
+                    <img src='/image18.svg' className='delivery-icon' />
                     <span className='delivery-text'>Earliest Delivery By 21 Jun, 5 Pm</span>
                 </div>
- 
+
                 {/* Payment Options */}
                 <div className='payment-options-section'>
                     <h3 className='payment-title'>Payment Option</h3>
                     <p className='payment-subtitle'>Extra Discount + Offers Available on Prepaid Payments</p>
- 
+
+                    <div className='gift'><div className='gift-card-out'></div><div className='gift-card'>free scrub + gift worth 399 + prepaid off 100 + cashback</div></div>
                     {/* UPI Section */}
-                    <div className={`payment-method-card ${selectedPaymentMethod === 'upi' ? 'selected' : ''}`} 
-                         onClick={() => handlePaymentMethodSelect('upi')}>
+                    <div className={`payment-method-card ${selectedPaymentMethod === 'upi' ? 'selected' : ''}`}
+                        onClick={() => handlePaymentMethodSelect('upi')}>
                         <div className='payment-method-header'>
                             <div className='payment-method-left'>
-                                <span className='payment-icon'>▶</span>
+                                <img src='/Group34.svg' className='payment-icon' />
                                 <span className='payment-name'>UPI</span>
                             </div>
-                            <span className='payment-price'>₹ 399.00</span>
+                            <div className='price-container'>
+                                <span className='original'>₹ 699</span>
+                                <span className='discounted'>₹ 399</span>
+                            </div>
                         </div>
- 
+
+
                         {/* UPI Apps Horizontal Scroller */}
                         {selectedPaymentMethod === 'upi' && (
                             <>
@@ -143,17 +153,17 @@ const PayStep = ({ onContinue, onViewCoupons, formData, onPaymentMethodChange, o
                                         ))}
                                     </div>
                                 </div>
- 
+
                                 {/* ✅ MODIFIED: UPI Apps Button with navigation */}
                                 <div className='all-upi-apps-btn' onClick={() => handlePaymentMethodNavigation('upi')}>
-                                    <span>ALL UPI Apps</span>
-                                    <span>4 more Available</span>
-                                    <span>▶</span>
+                                    <span>AL UPI Apps</span>
+                                    <span>4 Deal Available</span>
+                                    <img src='/angle-right.svg' className='angle-right-icon' />
                                 </div>
                             </>
                         )}
                     </div>
- 
+
                     {/* UPI ID Input */}
                     {selectedPaymentMethod === 'upi' && (
                         <div className='upi-id-section'>
@@ -169,23 +179,32 @@ const PayStep = ({ onContinue, onViewCoupons, formData, onPaymentMethodChange, o
                             </div>
                         </div>
                     )}
- 
+
+                   
+
                     {/* ✅ MODIFIED: Other Payment Methods with navigation */}
                     {paymentMethods.map(method => (
-                        <div 
+                        <div
                             key={method.id}
-                            className={`payment-method-card ${selectedPaymentMethod === method.id ? 'selected' : ''}`}
+                            className={`payment-method-card1 ${selectedPaymentMethod === method.id ? 'selected' : ''}`}
                             onClick={() => handlePaymentMethodNavigation(method.id)} // ✅ CHANGED: Now navigates instead of just selecting
                         >
+                          <div className='gift1'><div className='gift-card-out'></div><div className='gift-card'>free scrub + gift worth 399 + prepaid off 100 + cashback</div></div>
+                    {/* UPI Section */}
                             <div className='payment-method-header'>
                                 <div className='payment-method-left'>
-                                    <span className='payment-icon'>{method.icon}</span>
+                                    <img src={method.icon} className='payment-icon'/>
                                     <div className='payment-method-info'>
-                                        <span className='payment-name'>{method.name}</span>
-                                        <span className='payment-subtitle'>{method.subtitle}</span>
+                                        <span className='payment-name1'>{method.name}</span>
+                                        <span className='payment-subtitle1'>{method.subtitle}</span>
                                     </div>
                                 </div>
-                                <span className='payment-price'>{method.price}</span>
+                                <div className='price-container1'>
+                                    <span className='original1'>₹ {method.original}</span>
+                                    <span className='discounted1'>{method.discounted}</span>
+                                    </div>
+                                
+
                             </div>
                         </div>
                     ))}
@@ -194,5 +213,5 @@ const PayStep = ({ onContinue, onViewCoupons, formData, onPaymentMethodChange, o
         </div>
     );
 };
- 
+
 export default PayStep;

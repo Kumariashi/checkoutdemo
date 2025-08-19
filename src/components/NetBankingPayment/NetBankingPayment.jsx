@@ -8,37 +8,37 @@ const NetBankingPayment = ({ formData, handleInputChange, onPaymentSuccess }) =>
     { 
       id: 'hdfc', 
       name: 'HDFC Bank', 
-      icon: '🏦',
-      color: '#004c8f'
+      icon: '/image36.svg',
+    
     },
     { 
       id: 'sbi', 
       name: 'State Bank Of India', 
-      icon: '🏛️',
-      color: '#1e3a8a'
+      icon: '/image37.svg',
+      
     },
     { 
       id: 'icici', 
       name: 'ICICI Bank', 
-      icon: '🏦',
-      color: '#f97316'
+      icon: '/image38.svg',
+     
     },
     { 
       id: 'kotak', 
       name: 'Kotak Mahindra Bank', 
-      icon: '🏦',
+      icon: '/image39.svg',
       color: '#dc2626'
     },
     { 
       id: 'axis', 
       name: 'AU Small Finance Bank', 
-      icon: '🏦',
+      icon: '/image41.svg',
       color: '#f59e0b'
     },
     { 
       id: 'icici2', 
       name: 'ICICI Bank', 
-      icon: '🏦',
+      icon: '/image38.svg',
       color: '#f97316'
     }
   ];
@@ -62,48 +62,49 @@ const NetBankingPayment = ({ formData, handleInputChange, onPaymentSuccess }) =>
 
   return (
     <div className="netbanking-payment">
+
+    <div className='delivery-info-section'>
+        <img src='/image18.svg' className='delivery-icon' />
+        <span className='delivery-text'>Earliest Delivery By 21 Jun, 5 Pm</span>
+      </div>
+      
       <div className="netbanking-payment-header">
         <span className="back-arrow">←</span>
         <h2 className="payment-title">Select Bank</h2>
       </div>
 
+     
+
       <div className="banks-container">
-        <div className="banks-grid">
+        <div className="banks1-grid">
           {banks.map((bank) => (
             <div
               key={bank.id}
-              className={`bank-item ${selectedBank === bank.id ? 'selected' : ''}`}
+              className={`bank1-item ${selectedBank === bank.id ? 'selected' : ''}`}
               onClick={() => handleBankSelect(bank.id)}
             >
               <div className="bank-icon-container">
                 <div 
-                  className="bank-icon"
-                  style={{ backgroundColor: bank.color }}
+                  className="bank1-icon"
+                  
                 >
-                  {bank.icon}
+                 <img src= {bank.icon} />
                 </div>
               </div>
-              <span className="bank-name">{bank.name}</span>
+              
+              <span className="bank1-name">{bank.name}</span>
             </div>
           ))}
         </div>
 
-        <div className="other-banks-section">
-          <button className="other-banks-button">
+        <div className="other-banks1-section">
+          <button className="other-banks1-button">
             Select Different Bank
           </button>
         </div>
       </div>
 
-      <div className="netbanking-payment-footer">
-        <button 
-          className="continue-button"
-          onClick={handleContinue}
-          disabled={!selectedBank}
-        >
-          Continue →
-        </button>
-      </div>
+      
     </div>
   );
 };

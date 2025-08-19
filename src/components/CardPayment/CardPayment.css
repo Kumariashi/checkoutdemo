@@ -9,7 +9,8 @@
 .card-payment-header {
   display: flex;
   align-items: center;
-  padding: 16px 20px;
+  padding: 0px 20px;
+  padding-bottom: 0px;
   border-bottom: 1px solid #eee;
   background: #fff;
   position: sticky;
@@ -18,17 +19,24 @@
 }
 
 .back-arrow {
-  font-size: 18px;
-  margin-right: 12px;
-  cursor: pointer;
-  color: #333;
+ color: #000;
+font-family: "Public Sans";
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: capitalize;
+cursor: pointer;
 }
 
-.payment-title {
-  font-size: 16px;
-  font-weight: 600;
-  color: #333;
-  margin: 0;
+h2.payment-title {
+  color: #000;
+font-family: "Public Sans";
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: capitalize;
 }
 
 .card-form1 {
@@ -50,6 +58,15 @@ gap: 2px;
 align-self: stretch;
 border-radius: 5.95px;
 border: 1px solid #777A7C;
+
+}
+.form11-group.input{
+  color: #131521;
+font-family: "Public Sans";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+text-transform: capitalize;
 }
 
 .form1-group.half-width {
@@ -78,10 +95,7 @@ text-transform1: capitalize;
 
 .form11-input {
   width: 100%;
- 
- 
- color: #777A7C;
-
+color:#131521;
 leading-trim: both;
 text-edge: cap;
 font-family: "Public Sans";
@@ -90,6 +104,7 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 text-transform1: capitalize;
+border:none;
 }
 
 .form11-input:focus {
@@ -109,45 +124,40 @@ text-transform1: capitalize;
 }
 
 .card-number-input {
-  padding-right: 60px;
-  color: #777A7C;
-
+ color: #131521;
 leading-trim: both;
 text-edge: cap;
 font-family: "Public Sans";
 font-size: 18px;
 font-style: normal;
 font-weight: 400;
-line-height: normal;
-text-transform1: capitalize;
+text-transform: capitalize;
+border:none;
 }
 
 .card-icons {
   position: absolute;
-  right: 12px;
+  right: 40px;
+  margin-top:18px;
+ 
   display: flex;
   align-items: center;
+  
+}
+.card-circle{
+  position: relative;
+  display: flex;
+  align-items: center;
+  right:-9px;
+  
+}
+.card-cir2{
+  z-index: 1;
+  position: relative;
+  right:9px;
 }
 
-.card-icon {
-  font-size: 10px;
-  font-weight: bold;
-  padding: 2px 4px;
-  border-radius: 2px;
-  color: white;
-}
 
-.visa-icon {
-  background: #1a1f71;
-}
-
-.mastercard-icon {
-  background: #eb001b;
-}
-
-.rupay-icon {
-  background: #097c36;
-}
 
 .cvv-input-container {
   position: relative;
@@ -221,12 +231,15 @@ text-transform1: capitalize;
   .card-form1 {
     padding: 16px;
   }*/}
-  
-  .form1-row {
-    flex-direction: column;
+  .form1-new {
+    display: flex;
+    flex-direction: row;
     gap: 16px;
   }
   
+ 
+  
   .form1-group.half-width {
-    width: 100%;
+    
+    width: 70%;
   }

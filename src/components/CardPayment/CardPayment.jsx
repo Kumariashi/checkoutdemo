@@ -13,19 +13,19 @@ const CardPayment = ({ form1Data, handleInputChange, onPaymentSuccess }) => {
 
   const handleCardInputChange = (field, value) => {
     let form1attedValue = value;
-    
+
     // form1at card number with spaces
     if (field === 'cardNumber') {
       form1attedValue = value.replace(/\s/g, '').replace(/(.{4})/g, '$1 ').trim();
       if (form1attedValue.length > 19) return; // Limit to 16 digits + 3 spaces
     }
-    
+
     // form1at expiry date
     if (field === 'expiryDate') {
       form1attedValue = value.replace(/\D/g, '').replace(/(\d{2})(\d)/, '$1/$2');
       if (form1attedValue.length > 5) return; // Limit to MM/YY
     }
-    
+
     // Limit CVV to 3 digits
     if (field === 'cvv') {
       form1attedValue = value.replace(/\D/g, '');
@@ -65,7 +65,13 @@ const CardPayment = ({ form1Data, handleInputChange, onPaymentSuccess }) => {
   };
 
   return (
+
     <div className="card-payment">
+      {/* Delivery Info */}
+      <div className='delivery-info-section'>
+        <img src='/image18.svg' className='delivery-icon' />
+        <span className='delivery-text'>Earliest Delivery By 21 Jun, 5 Pm</span>
+      </div>
       <div className="card-payment-header">
         <span className="back-arrow">←</span>
         <h2 className="payment-title">Credit/Debit Cards</h2>
@@ -73,10 +79,10 @@ const CardPayment = ({ form1Data, handleInputChange, onPaymentSuccess }) => {
 
       <div className="card-form1">
         <div className="form11-group">
-        <div className='form1-label'>Full Name</div>
+          <div className='form1-label'>Full Name</div>
 
-          
-          
+
+
           {/*<label className="form1-label">Full Name</label>*/}
           <input
             type="text"
@@ -85,33 +91,31 @@ const CardPayment = ({ form1Data, handleInputChange, onPaymentSuccess }) => {
             onChange={(e) => handleCardInputChange('fullName', e.target.value)}
             className="form11-input"
           />
-          
+
 
         </div>
 
         <div className="form11-group">
           <label className="form1-label">Card Number</label>
-          <div className="card-input-container">
-            <input
-              type="text"
-              placeholder="XXXX XXXX XXXX XXXX"
-              value={cardDetails.cardNumber}
-              onChange={(e) => handleCardInputChange('cardNumber', e.target.value)}
-              className="form11-input card-number-input"
-            />
-            <div className="card-icons">
-              {getCardType(cardDetails.cardNumber) === 'visa' && (
-                <div className="card-icon visa-icon">VISA</div>
-              )}
-              {getCardType(cardDetails.cardNumber) === 'mastercard' && (
-                <div className="card-icon mastercard-icon">MC</div>
-              )}
-              {getCardType(cardDetails.cardNumber) === 'rupay' && (
-                <div className="card-icon rupay-icon">RUPAY</div>
-              )}
-            </div>
+
+          <input
+            type="text"
+            placeholder="XXXX XXXX XXXX XXXX"
+            value={cardDetails.cardNumber}
+            onChange={(e) => handleCardInputChange('cardNumber', e.target.value)}
+            className="form11-input"
+          />
+          <div className="card-icons">
+             <div className='card-circle'>'
+               <img src="/Ellipse7.svg" className="card-cir1" />
+                <img src="/Ellipse8.svg" className="card-cir2" />
+                </div>
+                <img src="/image35.svg" className="card-icon"/>
+            
+
           </div>
         </div>
+        <div className="form1-new">
 
         <div className="form1-row">
           <div className="form11-group half-width">
@@ -124,7 +128,7 @@ const CardPayment = ({ form1Data, handleInputChange, onPaymentSuccess }) => {
               className="form11-input"
             />
           </div>
-          
+
           <div className="form11-group half-width">
             <label className="form1-label">Enter CVV</label>
             <div className="cvv-input-container">
@@ -145,19 +149,13 @@ const CardPayment = ({ form1Data, handleInputChange, onPaymentSuccess }) => {
                 </button>
                 <span className="cvv-info">ℹ️</span>
               </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="card-payment-footer">
-        <button 
-          className="continue-button"
-          onClick={handleContinue}
-        >
-          Continue →
-        </button>
-      </div>
+      
     </div>
   );
 };
